@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #FDB913;
+    color: #001D7E;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .sidebar {
+    background-color: #001D7E;
+    width: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+  }
+  
+  .sidebar img.logo {
+    width: 40px;
+    margin-bottom: 20px;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .menu img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .menu .user-icon {
+    margin-top: auto;
+    margin-bottom: 20px;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px 40px;
+  }
+  
+  .destaques, .produtos, .bastidores {
+    margin-bottom: 30px;
+  }
+  
+  .destaque-card img {
+    width: 220px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.3);
+  }
+  
+  .produto-grid {
+    display: flex;
+    gap: 16px;
+    margin-top: 10px;
+  }
+  
+  .produto {
+    background: #001D7E;
+    color: white;
+    border-radius: 12px;
+    padding: 10px;
+    width: 140px;
+    text-align: center;
+    font-size: 14px;
+  }
+  
+  .produto img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  .bastidor-grid {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .bastidor {
+    background: #001D7E;
+    color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    width: 220px;
+  }
+  
+  .bastidor img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .bastidor p {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+  

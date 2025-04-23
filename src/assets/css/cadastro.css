@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+    }
+.cadastro-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #000066, #000014);
+    }
+
+.cadastro-box {
+    background: rgba(25, 25, 112, 0.6);
+    padding: 40px;
+    border-radius: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+.cadastro-box h2 {
+    text-align: center;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    }
+
+.cadastro-box label {
+    color: white;
+    font-size: 14px;
+    margin-top: 10px;
+    }
+
+.cadastro-box input[type="email"],
+.cadastro-box input[type="password"] {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+.diretor-label {
+    color: #ccc;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.cadastro-box button {
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}

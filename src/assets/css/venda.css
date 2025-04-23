@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    display: flex;
+    background-color: #f4ae1c;
+  }
+  
+  .admin-container {
+    display: flex;
+    width: 100%;
+  }
+  
+  .sidebar {
+    width: 220px;
+    background: #001f8b;
+    color: #fff;
+    height: 100vh;
+    padding: 20px;
+  }
+  
+  .sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin: 10px 0;
+  }
+  
+  .sidebar a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 30px;
+  }
+  
+  .produto-form {
+    background: #001f8b;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .produto-form input,
+  .produto-form textarea,
+  .produto-form button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .produto-form button {
+    background: #f4ae1c;
+    color: #001f8b;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .produtos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .produto-card {
+    background: #001f8b;
+    color: white;
+    width: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .produto-card img {
+    width: 100%;
+    display: block;
+  }
+  
+  .produto-card .info {
+    padding: 10px;
+  }
+  
+  .produto-card .info h3 {
+    margin: 0;
+  }
+  
+  .produto-card .info .descricao {
+    font-size: 0.9em;
+    margin: 5px 0;
+  }
+  
+  .produto-card .botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  
+  .produto-card .botoes button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    background: #f4ae1c;
+    color: #001f8b;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .produto-card .botoes .danger {
+    background: red;
+    color: white;
+  }
+  

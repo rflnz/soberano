@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin | Produtos</title>
+  <link rel="stylesheet" href="../../assets/css/venda.css"></head>
+<body>
+  <div class="admin-container">
+    <aside class="sidebar">
+      <h2>Admin</h2>
+      <ul>
+        <li><a href="#">Produtos</a></li>
+        <li><a href="#">Pedidos</a></li>
+        <li><a href="#">Usuários</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <h1>Cadastro de Produto</h1>
+      <form class="produto-form">
+            <input type="text" placeholder="Nome do Produto" />
+            <input type="number" placeholder="Preço (R$)" />
+            <textarea placeholder="Descrição detalhada"></textarea>
+            <label>Tamanhos disponíveis:</label>
+            <div class="checkboxes">
+              <label><input type="checkbox" name="tamanho" value="PP" /> PP</label>
+              <label><input type="checkbox" name="tamanho" value="P" /> P</label>
+              <label><input type="checkbox" name="tamanho" value="M" /> M</label>
+              <label><input type="checkbox" name="tamanho" value="G" /> G</label>
+              <label><input type="checkbox" name="tamanho" value="GG" /> GG</label>
+            </div>
+          
+            <label>Formas de pagamento:</label>
+            <div class="checkboxes">
+              <label><input type="checkbox" name="pagamento" value="Cartão" /> Cartão</label>
+              <label><input type="checkbox" name="pagamento" value="Boleto" /> Boleto</label>
+              <label><input type="checkbox" name="pagamento" value="Pix" /> Pix</label>
+            </div>
+          
+            <input type="file" accept="image/*" />
+            <button type="submit">Cadastrar</button>
+          </form>
+       
+
+      <h2>Produtos Cadastrados</h2>
+      <div class="produtos-lista">
+        <!-- Exemplo de card -->
+        <div class="produto-card">
+          <img src="https://via.placeholder.com/200x200" alt="Produto" />
+          <div class="info">
+            <h3>Jersey NFL</h3>
+            <p>R$150,00</p>
+            <p class="descricao">Voltou dos jogos! 💙💛</p>
+            <div class="botoes">
+              <button>Editar</button>
+              <button class="danger">Excluir</button>
+            </div>
+          </div>
+        </div>
+        <!-- + cards -->
+      </div>
+    </main>
+  </div>
+</body>
+</html>

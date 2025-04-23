@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4ae1c;
+  }
+  
+  .container {
+    padding: 20px 30px;
+  }
+  
+  header {
+    margin-bottom: 20px;
+  }
+  
+  .voltar {
+    color: #001f8b;
+    font-size: 22px;
+    text-decoration: none;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 20px;
+  }
+  
+  .produto {
+    background-color: #001f8b;
+    color: white;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .produto img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 5px;
+  }
+  
+  .produto p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .produto strong {
+    font-size: 15px;
+  }
+  

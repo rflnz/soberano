@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4ae1c; /* amarelo do fundo */
+    color: #000c44;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  .voltar {
+    text-decoration: none;
+    font-size: 18px;
+    color: #000c44;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  .conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .imagem img {
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  }
+  
+  .info {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .horarios {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  
+  .inscricao {
+    margin: 20px 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .categorias {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .categoria {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .categoria strong {
+    min-width: 90px;
+  }
+  
+  .categoria button {
+    background-color: #001f8b;
+    color: white;
+    padding: 6px 14px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s;
+  }
+  
+  .categoria button:hover {
+    background-color: #0032cc;
+  }
+  

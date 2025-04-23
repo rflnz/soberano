@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Recuperar Senha</title>
+</head>
+<body>
+    <h1>Recuperar Senha</h1>
+    <form id="recuperarForm">
+    <input type="email" id="email" placeholder="Seu e-mail" required />
+    <button type="submit">Enviar link de recuperação</button>
+    </form>
+
+    <script>
+    document.getElementById('recuperarForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const email = document.getElementById('email').value;
+    alert("Se fosse um sistema real, você receberia um link para recuperar a senha do e-mail: " + email);
+    });
+    </script>
+</body>
+</html>
