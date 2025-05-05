@@ -20,7 +20,9 @@
         <input type="checkbox" id="diretor" />
         É diretor?
       </label>
-
+      <div class="back-link">
+        <a href="./login.html">Voltar ao login</a>
+      </div>
       <button onclick="cadastrar()">Criar conta</button>
     </div>
   </div>
@@ -33,8 +35,7 @@
 
       console.log({ email, senha, tipo: isDiretor ? "diretor" : "aluno" });
 
-      // aqui depois você pode fazer a requisição pro MySQL
-      // via fetch ou IPC para enviar os dados ao backend
+
     }
   </script>
 </body>

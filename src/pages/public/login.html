@@ -12,24 +12,35 @@
         <h2>Bem-vindo à maior do Estado</h2>
         <img src="../../../src/assets/img/logo.jpg" alt="Logo Soberano" />
         </div>
+
         <div class="login-right">
         <h3>Entrar</h3>
         <label for="email">E-mail</label>
         <input type="email" id="email" placeholder="Digite seu e-mail" />
         <label for="senha">Senha</label>
         <input type="password" id="senha" placeholder="Digite sua senha" />
-        <a href="#">Esqueceu sua senha?</a>
+        <div class="link">
+            <a href="./recuperar.html">esqueceuu sua senha?</a>
+          </div>
         <label for="tipo">Tipo de usuário</label>
         <select id="tipo">
             <option value="aluno">Aluno</option>
             <option value="admin">Administrador</option>
         </select>
-        <div class="bottom-text">
-            <span>Não tem uma conta? <a href="./cadastro.html">Cadastre-se</a></span>
-        </div>
+    </form>
+
+    <div class="bottom-text">
+      <span>Não tem uma conta? <a href="./cadastro.html">Cadastre-se</a></span>
+    </div>
+
+
+    <form action="./home.html" method="GET">
+        <!-- inputs aqui -->
         <button type="submit">Entrar</button>
-        </div>
-        </div>
+      </form>
+      
+  </div>
+    </div>
 
 </body>
 </html>

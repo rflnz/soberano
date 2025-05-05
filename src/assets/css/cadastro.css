@@ -3,13 +3,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana;
+    
+    }
+body {
+    height: 100vh;
+    background: linear-gradient(180deg, #000d64, #0c0c1e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
 .cadastro-container {
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, #000066, #000014);
     }
 
 .cadastro-box {
@@ -21,18 +28,20 @@
     flex-direction: column;
     gap: 12px;
     box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    color: white;
     }
 
 .cadastro-box h2 {
     text-align: center;
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    
     }
 
 .cadastro-box label {
     color: white;
-    font-size: 14px;
+    font-size: 0.9rem;
     margin-top: 10px;
+    
     }
 
 .cadastro-box input[type="email"],
@@ -58,4 +67,7 @@
     color: white;
     border-radius: 10px;
     cursor: pointer;
+}
+.cadastro-box button:hover{
+    background-color: rgba(255, 255, 255, 0.4);
 }
