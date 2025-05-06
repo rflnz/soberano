@@ -5,77 +5,97 @@ body {
   color: #001D7E;
 }
 
+
+
+/*barra lateral*/
 .container {
   display: flex;
-  flex-direction: row-reverse; /* Move a sidebar para a direita */
+  flex-direction: row-reverse; 
+  position: relative;
 }
-
-/* Sidebar na direita */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}.menu img {
+  width: 55px;
+  height: 55px;
+}
 .sidebar {
-  background-color: #001D7E;
-  width: 70px;
+  display: flex;
+  flex-direction: row-reverse; 
+  position: relative;
+  background-color: #001c75;
+  width: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 10px;
   position: relative;
 }
-
-/* Logo */
 .sidebar img.logo {
-  width: 40px;
-  margin-bottom: 20px;
+  width: 77px;
+  margin-bottom: 50px;
 }
-
-/* Menu de ícones */
-.menu {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: center;
-}
-
-.menu img {
-  width: 24px;
-  height: 24px;
-  cursor: pointer;
-}
-
-.menu .user-icon {
-  margin-top: auto;
-  margin-bottom: 20px;
-}
-
-/* Conteúdo principal */
-.content {
-  flex: 1;
-  padding: 20px 40px;
-}
-
-/* Destaques agora fica no canto da sidebar como carrossel vertical */
-.destaques {
+.sidebar img.user-icon {
   position: absolute;
-  top: 60%;
-  left: -240px; /* desloca o carrossel para a esquerda da sidebar */
-  transform: translateY(-50%);
-  background-color: transparent;
+  bottom: 10px;
+  left: 50%;
+  width: 55px;
+  height: 55px;
+  transform: translateX(-50%);
+}
+
+
+
+/* Destaques  */
+
+.carousel {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-left: 0;
+  margin-right: auto; /* Garante alinhamento à esquerda */
+  }
+
+.carousel-images {
   display: flex;
-  flex-direction: column;
-  gap: 12px;
-  max-height: 300px;
-  overflow-y: auto;
-  padding-right: 10px;
+  transition: transform 0.5s ease-in-out;
 }
 
-.destaque-card img {
-  width: 220px;
-  border-radius: 16px;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.3);
+.carousel-images img {
+  width: 100%;
+  border-radius: 10px;
+  flex-shrink: 0;
 }
 
-.produtos, .bastidores {
-  margin-bottom: 30px;
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
 }
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+
+
+
+/*produtos*/
 
 .produto-grid {
   display: flex;
@@ -87,16 +107,21 @@ body {
   background: #001D7E;
   color: white;
   border-radius: 12px;
-  padding: 10px;
-  width: 140px;
-  text-align: center;
+  padding: 8px;
+  width: 250px;
+  text-align: left;
   font-size: 14px;
 }
 
 .produto img {
-  width: 100%;
+  width: 250px;
+  height: 250px;
   border-radius: 10px;
 }
+
+
+
+/*bastidores*/
 
 .bastidor-grid {
   display: flex;
@@ -120,3 +145,5 @@ body {
   padding: 6px 10px;
   font-size: 14px;
 }
+
+
