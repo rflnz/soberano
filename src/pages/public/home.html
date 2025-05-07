@@ -1,132 +1,104 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Home - Soberano</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Soberano</title>
   <link rel="stylesheet" href="../../assets/css/home.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="layout">
+    <main class="main-content">
+      <h2 class="section-title">Destaques</h2>
+      <div class="content-row">
 
+        <!-- Carrossel -->
+        <div class="carousel">
+          <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+          <div class="carousel-images" id="carouselImages">
+            <img src="../../assets/img/recepcao.jpg" alt="Foto 1" />
+            <img src="../../assets/img/gonzaga.jpg" alt="Foto 2" />
+            <img src="../../assets/img/furacaoo.jpg" alt="Foto 3" />
+          </div>
+          <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
+        </div>
 
-<!--barra lateral-->
-  <div class="container">
+        <div class="right-content">
+          <!-- Produtos -->
+          <section class="produtos">
+            <h2>Produtos →</h2>
+            <div class="produto-grid">
+              <div class="produto">
+                <img src="../../assets/img/moletom.png" />
+                <p>Moletom canguru<br><strong>R$120,00</strong></p>
+              </div>
+              <div class="produto">
+                <img src="../../assets/img/doll.png" />
+                <p>Doll fem<br><strong>R$80,00</strong></p>
+              </div>
+              <div class="produto">
+                <img src="../../assets/img/colete.png" />
+                <p>Colete azul<br><strong>R$40,00</strong></p>
+              </div>
+              <div class="produto">
+                <img src="../../assets/img/nfl.png" />
+                <p>Jersey NFL<br><strong>R$150,00</strong></p>
+              </div>
+            </div>
+          </section>
 
+          <!-- Bastidores -->
+          <section class="bastidores">
+            <h2>Bastidores</h2>
+            <div class="bastidor-grid">
+              <div class="bastidor">
+                <img src="../../assets/img/furacao.jpg" />
+                <p>Nosso furacão 🍸</p>
+              </div>
+              <div class="bastidor">
+                <img src="../../assets/img/pascoa.jpg" />
+                <p>Ação de Páscoa 🐰</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- Sidebar -->
     <aside class="sidebar">
       <img src="../../assets/img/logo.jpg" class="logo" />
-      
       <nav class="menu">
         <img src="../../assets/img/icon1.png" />
         <img src="../../assets/img/icon2.png" />
-        <img src="../../assets/img/icon3.png"  />
-
+        <img src="../../assets/img/icon3.png" />
         <img src="../../assets/img/icon4.png" class="user-icon" />
       </nav>
     </aside>
-
-
-<!--carrossel-->
-      <div class="carousel">
-
-        <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
-        
-        <div class="carousel-images" id="carouselImages">
-          <img src="../../assets/img/Captura de tela 2025-04-29 220843.png" alt="Foto 1">
-          <img src="../../assets/img/Captura de tela 2025-04-29 221015.png" alt="Foto 2">
-          <img src="../../assets/img/Captura de tela 2025-04-29 220843.png" alt="Foto 3">
-        </div>
-        
-        <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
-      </div>
-
-
-
-
-<!--produtos-->
-      <section class="produtos">
-        
-        <h2>Produtos →</h2>
-        <div class="produto-grid">
-          
-          <div class="produto">
-            <img src="../../assets/img/moletom.png" />
-            <p>Moletom canguru<br><strong>R$120,00</strong></p>
-          </div>
-          
-          <div class="produto">
-            <img src="../../assets/img/doll.png" />
-            <p>Doll fem<br><strong>R$80,00</strong></p>
-          </div>
-          
-          <div class="produto">
-            <img src="../../assets/img/colete.png" />
-            <p>Colete azul<br><strong>R$40,00</strong></p>
-          </div>
-          
-          <div class="produto">
-            <img src="../../assets/img/nfl.png" />
-            <p>Jersey NFL<br><strong>R$150,00</strong></p>
-          </div>
-          
-          <!--<div class="produto">
-            <img src="../../assets/img/camisabranca.png" />
-            <p>Camisa branca<br><strong>R$70,00</strong></p>
-          </div>
-          
-          <div class="produto">
-            <img src="../../assets/img/meia.png" />
-            <p>Meia<br><strong>R$20,00</strong></p>
-          </div>
-        
-        </div>
-      </section>
-    -->
-
-
-<!--bastidores-->
-      <section class="bastidores">
-
-        <h2>Bastidores</h2>
-
-        <div class="bastidor-grid">
-        
-          <div class="bastidor">
-            <img src="../assets/furacao-bastidor.jpg" />
-            <p>Nosso furacão 🍸</p>
-          </div>
-          
-          <div class="bastidor">
-            <img src="../assets/pascoa.jpg" />
-            <p>Ação de Páscoa 🐰</p>
-          </div>
-        
-        </div>
-
-      </section>
-    </main>
-
-
-
-<!--funcionalidade carrossel-->
-      <script>
-        const carousel = document.getElementById("carouselImages");
-        const totalSlides = carousel.children.length;
-        let currentIndex = 0;
-    
-        function updateCarousel() {
-          const offset = -currentIndex * 100;
-          carousel.style.transform = `translateX(${offset}%)`;
-        }
-    
-        function nextSlide() {
-          currentIndex = (currentIndex + 1) % totalSlides;
-          updateCarousel();
-        }
-    
-        function prevSlide() {
-          currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-          updateCarousel();
-        }
-      </script> 
   </div>
+
+  <!-- JS Carrossel -->
+  <script>
+    const carousel = document.getElementById("carouselImages");
+    const totalSlides = carousel.children.length;
+    let currentIndex = 0;
+
+    function updateCarousel() {
+      const offset = -currentIndex * 100;
+      carousel.style.transform = `translateX(${offset}%)`;
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateCarousel();
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      updateCarousel();
+    }
+  </script>
 </body>
 </html>
