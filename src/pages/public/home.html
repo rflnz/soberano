@@ -51,7 +51,7 @@
 
           <!-- Bastidores -->
           <section class="bastidores">
-            <h2>Bastidores</h2>
+            <h2>Bastidores →</h2>
             <div class="bastidor-grid">
               <div class="bastidor">
                 <img src="../../assets/img/furacao.jpg" />
@@ -68,14 +68,33 @@
     </main>
 
     <!-- Sidebar -->
-    <aside class="sidebar">
+    <aside class="sidebar" onclick="toggleSidebar()">
       <img src="../../assets/img/logo.jpg" class="logo" />
-      <nav class="menu">
+      <nav class="menu-compact">
         <img src="../../assets/img/icon1.png" />
         <img src="../../assets/img/icon2.png" />
         <img src="../../assets/img/icon3.png" />
         <img src="../../assets/img/icon4.png" class="user-icon" />
-      </nav>
+
+        <nav class="menu menu-expanded">
+          <div class="menu-item">
+            <img src="../../assets/img/icon1.png" />
+            <span>Início</span>
+          </div>
+          <div class="menu-item">
+            <img src="../../assets/img/icon2.png" />
+            <span>Produtos</span>
+          </div>
+          <div class="menu-item">
+            <img src="../../assets/img/icon3.png" />
+            <span>Eventos</span>
+          </div>
+          <div class="menu-item">
+            <img src="../../assets/img/icon4.png" />
+            <span>Perfil</span>
+          </div>
+
+        </nav>
     </aside>
   </div>
 
@@ -100,5 +119,13 @@
       updateCarousel();
     }
   </script>
+
+  <script>
+    function toggleSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.classList.toggle('expanded');
+    }
+  </script>
+  
 </body>
 </html>

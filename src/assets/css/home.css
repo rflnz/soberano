@@ -49,6 +49,9 @@ main.main-content {
   align-items: center;
   padding-top: 10px;
   position: relative;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .sidebar .logo {
@@ -75,12 +78,78 @@ main.main-content {
   height: 35px;
 }
 
+.sidebar.expanded {
+  width: 240px;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+}
+
+.destaque-card img {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+.sidebar {
+  background-color: #001D7E;
+  width: 70px;
+  transition: width 0.3s ease;
+  overflow: hidden;
+  padding-top: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.sidebar.expanded {
+  width: 240px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  transition: opacity 0.3s ease;
+}
+
+/* Menu expandido oculto por padrão */
+.menu-expanded {
+  display: none;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+.menu-expanded .menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+}
+
+.menu-expanded img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Quando sidebar estiver expandida */
+.sidebar.expanded .menu-compact {
+  display: none;
+}
+
+.sidebar.expanded .menu-expanded {
+  display: flex;
+}
+
+
 /* Carrossel */
 .carousel {
   position: relative;
   width: 500px;
   height: 890px;
-
+  box-shadow: rgba(0, 0, 0, 0.534) 0px 5px 15px;
   overflow: hidden;
   border-radius: 12px;
 
@@ -129,7 +198,7 @@ main.main-content {
 .produto-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 16px;
+  gap: 20px;
 }
 
 .produto {
@@ -137,12 +206,15 @@ main.main-content {
   color: white;
   border-radius: 12px;
   padding: 8px;
-  font-size: 14px;
+  font-size: 17px;
+  width: 300px;
+  height: 320px;
+  box-shadow: rgba(0, 0, 0, 0.534) 0px 5px 15px;
 }
 
 .produto img {
   width: 100%;
-  height: 200px;
+  height: 240px;
   border-radius: 10px;
   object-fit: cover;
 }
@@ -150,6 +222,7 @@ main.main-content {
 /* Bastidores */
 .bastidores h2 {
   margin-bottom: 10px;
+
 }
 
 .bastidor-grid {
@@ -164,16 +237,25 @@ main.main-content {
   border-radius: 12px;
   overflow: hidden;
   font-size: 14px;
-  height: 450px;
-  width: 500px;
+  height: 470px;
+  width: 626px;
+  padding: 8px;
+  border-radius: 12px;
+  font-size: 17px;
+  box-shadow: rgba(0, 0, 0, 0.534) 0px 5px 15px;
+
 }
 
 .bastidor img {
   width: 100%;
-  height: 150px;
+  height: 406px;
   object-fit: cover;
+  border-radius: 10px;
 }
 
 .bastidor p {
   padding: 6px 10px;
 }
+
+
+
