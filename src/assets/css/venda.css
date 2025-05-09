@@ -75,24 +75,28 @@
   .produtos-lista {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
   }
   
   .produto-card {
     background: #001f8b;
     color: white;
-    width: 220px;
+    width: 200px;
+    height: 370px;
     border-radius: 10px;
     overflow: hidden;
+    padding: 8px;
   }
   
   .produto-card img {
     width: 100%;
-    display: block;
+    height: 240px;
+    border-radius: 10px;
+    object-fit: cover;
   }
   
   .produto-card .info {
-    padding: 10px;
+    padding: 5px;
   }
   
   .produto-card .info h3 {
@@ -107,7 +111,7 @@
   .produto-card .botoes {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
+    margin-top: 5px;
   }
   
   .produto-card .botoes button {

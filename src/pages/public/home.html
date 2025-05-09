@@ -70,32 +70,45 @@
     <!-- Sidebar -->
     <aside class="sidebar" onclick="toggleSidebar()">
       <img src="../../assets/img/logo.jpg" class="logo" />
-      <nav class="menu-compact">
-        <img src="../../assets/img/icon1.png" />
-        <img src="../../assets/img/icon2.png" />
-        <img src="../../assets/img/icon3.png" />
-        <img src="../../assets/img/icon4.png" class="user-icon" />
-
+    
+      <div class="menu-container">
+        <!-- Menu COMPACTO -->
+        <nav class="menu menu-compact">
+          <img src="../../assets/img/icon1.png" />
+          <img src="../../assets/img/icon2.png" />
+          <img src="../../assets/img/icon3.png" />
+        </nav>
+    
+        <!-- Menu EXPANDIDO -->
         <nav class="menu menu-expanded">
           <div class="menu-item">
             <img src="../../assets/img/icon1.png" />
-            <span>Início</span>
+            <span>Calendário</span>
           </div>
           <div class="menu-item">
             <img src="../../assets/img/icon2.png" />
-            <span>Produtos</span>
+            <span>Esportes</span>
           </div>
           <div class="menu-item">
             <img src="../../assets/img/icon3.png" />
-            <span>Eventos</span>
+            <span>Produtos</span>
           </div>
-          <div class="menu-item">
+        </nav>
+    
+        <!-- Ícone de perfil fixo embaixo -->
+        <div class="profile">
+          <!-- Compacto -->
+          <img src="../../assets/img/icon4.png" class="profile-icon" />
+        
+          <!-- Expandido -->
+          <div class="profile-expanded">
             <img src="../../assets/img/icon4.png" />
             <span>Perfil</span>
           </div>
-
-        </nav>
+        </div>
+      </div>
     </aside>
+    
   </div>
 
   <!-- JS Carrossel -->

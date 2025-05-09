@@ -78,10 +78,6 @@ main.main-content {
   height: 35px;
 }
 
-.sidebar.expanded {
-  width: 240px;
-}
-
 .content {
   flex: 1;
   padding: 20px;
@@ -92,34 +88,51 @@ main.main-content {
   margin-bottom: 10px;
 }
 
+
 .sidebar {
-  background-color: #001D7E;
-  width: 70px;
+  background-color:#001c75;
+  width: 85px;
   transition: width 0.3s ease;
   overflow: hidden;
   padding-top: 10px;
+  height: 100vh;
   cursor: pointer;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .sidebar.expanded {
-  width: 240px;
+  width: 190px;
 }
 
-.menu {
+.menu-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.menu-compact {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  margin-top: 20px;
-  transition: opacity 0.3s ease;
 }
 
-/* Menu expandido oculto por padrão */
+.menu-compact img {
+  width: 50px;
+  height: 50px;
+}
+
 .menu-expanded {
   display: none;
+  flex-direction: column;
   align-items: flex-start;
   padding-left: 20px;
+  gap: 20px;
 }
 
 .menu-expanded .menu-item {
@@ -130,17 +143,62 @@ main.main-content {
 }
 
 .menu-expanded img {
-  width: 24px;
-  height: 24px;
+  width: 50px;
+  height: 50px;
 }
 
-/* Quando sidebar estiver expandida */
+.profile {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.profile img {
+  width: 50px;
+  height: 40px;
+}
+
+/* Mostrar/ocultar baseado na expansão */
 .sidebar.expanded .menu-compact {
   display: none;
 }
 
 .sidebar.expanded .menu-expanded {
   display: flex;
+}
+.profile {
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+/* Expandido (inicialmente escondido) */
+.profile-expanded {
+  display: none;
+  align-items: center;
+  gap: 10px;
+  padding-left: 20px;
+  color: white;
+}
+
+.profile-expanded img {
+  width: 50px;
+  height: 40px;
+}
+
+/* Mostrar o expandido quando a sidebar estiver expandida */
+.sidebar.expanded .profile-icon {
+  display: none;
+}
+
+.sidebar.expanded .profile-expanded {
+  display: flex;
+  align-self: flex-start;
 }
 
 
