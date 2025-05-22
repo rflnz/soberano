@@ -1,21 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4ae1c;
-  }
-  
+  font-family: 'Poppins', sans-serif;
+  background: #FDB913;
+  color: #001D7E;
+  height: 100vh;
+  overflow: hidden;
+}
+
   .container {
-    padding: 20px 30px;
+    padding: 30px 35px;
   }
   
   header {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   
   .voltar {
     color: #001f8b;
-    font-size: 22px;
     text-decoration: none;
+    font-size: 30px;
+    font-weight: bold 3%;
+    margin-bottom: 10px;
   }
   
   main {
@@ -25,30 +35,35 @@ body {
   
   .produtos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    grid-template-columns: repeat(5, 10fr);
     gap: 20px;
   }
   
   .produto {
-    background-color: #001f8b;
+    font-family: 'Poppins', sans-serif;
+    background-color:#001D7E;
     color: white;
     border-radius: 12px;
-    padding: 10px;
-    text-align: center;
+    padding: 8px;
+    width: 350px;
+    height: 320px;
+    box-shadow: rgba(0, 0, 0, 0.534) 0px 5px 15px;
   }
   
   .produto img {
     width: 100%;
+    height: 240px;
     border-radius: 10px;
-    margin-bottom: 5px;
+    object-fit: cover;
   }
   
   .produto p {
-    margin: 0;
-    font-size: 14px;
+    font-size: 17px;
+    margin-left: 5px;
   }
   
   .produto strong {
-    font-size: 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
   }
   
