@@ -48,9 +48,14 @@ main.main-content {
   color: #ffffff;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  font-size: 17px;
   margin-bottom: 10px;
 }
+
+a:hover {
+  color: #6f83c4; 
+}
+
 
 .sidebar {
   background-color: #001c75;
@@ -267,6 +272,8 @@ main.main-content {
   font-size: 27px;
   margin-bottom: 10px;
 }
+
+
 .produto-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -303,7 +310,9 @@ main.main-content {
   font-size: 27px;
   margin-bottom: 10px;
 }
-
+a:hover {
+  color: #2d48a2;
+}
 .bastidores h2 {
   margin-bottom: 10px;
 

@@ -23,7 +23,13 @@ body {
     flex-wrap: wrap;
     gap: 30px;
   }
-  
+  .page {
+display: flex;
+align-items: center;
+gap: 70px;
+
+  }
+
   .imagem img {
     width: 350px;
     border-radius: 12px;
@@ -36,11 +42,12 @@ body {
   }
   
   .horarios {
-    margin-top: 10px;
-    width: 100%;
-    max-width: 400px;
+    width: 750px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  .info img {
+border-radius: 35px;
   }
   
   .inscricao {
@@ -80,4 +87,50 @@ body {
   .categoria button:hover {
     background-color: #0032cc;
   }
+
+
   
+  .carousel {
+    position: relative;
+    width: 750px;
+    height: 750px;
+    box-shadow: rgba(0, 0, 0, 0.534) 0px 5px 15px;
+    overflow: hidden;
+    border-radius: 12px;
+  
+  }
+  
+  .carousel-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+  }
+  
+  .carousel-images img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    height: 100%;
+    flex-shrink: 0;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
