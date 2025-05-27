@@ -6,73 +6,99 @@
   <link rel="stylesheet" href="../../assets/css/esportes.css">
 </head>
 <body>
-  <div class="container">
-    <header>
+
+
+
+<div class="page">
+  <div class="tall">
+  <div class="tal">
+      <header>
       <a href="../../pages/public/home.html" class="voltar">← Esportes</a>
     </header>
-<div class="page">
+  </div>     
     <div class="carousel">
       <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
-      <div class="carousel-images" id="carouselImages">
-        <img src="../../assets/img/treino.png" alt="Foto 1" />
-        <img src="../../assets/img/treino1.png" alt="Foto 2" />
-        <img src="../../assets/img/treino2.png" alt="Foto 3" />
-      </div>
+        <div class="carousel-images" id="carouselImages">
+          <img src="../../assets/img/treino.png" alt="Foto 1" />
+          <img src="../../assets/img/treino1.png" alt="Foto 2" />
+          <img src="../../assets/img/treino2.png" alt="Foto 3" />
+        </div>
       <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
     </div>
-    <div class="right-content">
+  </div> 
+<div class="right-content">
 
-      <div class="lado">
-      <div class="info">
-        <h2>Quadro de horários</h2>
-        <img src="../../assets/img/quadro.png" alt="Quadro de horários" class="horarios">
+  <div class="info">
+    <h2>Quadro de horários</h2>
+      <img src="../../assets/img/quadro.png" alt="Quadro de horários" class="horarios">
+    <p class="inscricao">Se inscreva para participar do time Soberano!</p>
 
-        <p class="inscricao">Se inscreva para participar do time Soberano!</p>
-
-        <div class="categorias">
+      <div class="categorias">
           <div class="categoria">
+            <strong>Individual:</strong>
 
-            <strong>Misto:</strong>
+            <button onclick="window.open('https://www.instagram.com', '_blank')">
+            Natação
+            </button>
 
-            <button>Natação</button>
+            <button onclick="window.open('https://www.instagram.com', '_blank')">
+            Xadrez
+            </button>
 
-            <button>Xadrez</button>
+            <button onclick="window.open('https://www.instagram.com', '_blank')">
+            Tênis de mesa
+            </button>
 
-            <button>Tênis de mesa</button>
-
-            <button>Judô</button>
-
+            <button onclick="window.open('https://www.instagram.com', '_blank')">
+            Judô
+            </button>
           </div>
 
           <div class="categoria">
 
             <strong>Feminino:</strong>
 
-            <button>Handebol</button>
+            <button onclick="window.open('https://www.instagram.com', '_blank')">
+            Handebol
+            </button>
 
-            <button>Futsal</button>
+            <button onclick="window.open('https://www.instagram.com', '_blank')">
+            Futsal
+            </button>
 
-            <button>Vôlei</button>
+            <button onclick="window.open('https://www.instagram.com', '_blank')">
+            Vôlei
+            </button>
 
-            <button>Basquete</button>
-
+            <button onclick="window.open('https://www.instagram.com', '_blank')">
+            Basquete
+            </button>
           </div>
 
           <div class="categoria">
             
             <strong>Masculino:</strong>
 
-            <button>Handebol</button>
+            <button onclick="window.open('https://www.instagram.com', '_blank')">
+            Handebol
+            </button>
 
-            <button>Futsal</button>
+            <button onclick="window.open('https://www.instagram.com', '_blank')">
+            Futsal
+            </button>
 
-            <button>Vôlei</button>
+            <button onclick="window.open('https://www.instagram.com', '_blank')">
+            Vôlei
+            </button>
 
-            <button>Basquete</button>
-          
+            <button onclick="window.open('https://www.instagram.com', '_blank')">
+            Basquete
+            </button>
           </div>
-        </div>
-  <script>
+      </div>
+  </div>   
+</div>    
+<script>
     const carousel = document.getElementById("carouselImages");
     const totalSlides = carousel.children.length;
     let currentIndex = 0;
@@ -91,12 +117,8 @@
       currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
       updateCarousel();
     }
-  </script>
-  
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+</script>
+</div>
+
 </body>
 </html>

@@ -1,76 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4ae1c; /* amarelo do fundo */
-    color: #000c44;
-  }
+  font-family: 'Montserrat', sans-serif;
+  background: #FDB913;
+  color: #001D7E;
+  height: 100vh;
+  overflow: hidden;
+}
   
-  .container {
-    padding: 20px;
-  }
-  
-  .voltar {
-    text-decoration: none;
-    font-size: 18px;
-    color: #000c44;
-    display: inline-block;
-    margin-bottom: 20px;
-  }
-  
-  .conteudo {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-  }
-  .page {
+.voltar {
+  color: #001f8b;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold 3%;
+
+}
+.tal{
+  padding-bottom: 20px;
+
+}
+.page {
 display: flex;
-align-items: center;
-gap: 70px;
+padding-left: 35px;
+padding-top: 36px;
+gap: 150px;
 
-  }
+}
 
-  .imagem img {
-    width: 350px;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  }
-  
-  .info {
-    flex: 1;
-    min-width: 300px;
-  }
-  
-  .horarios {
-    width: 750px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-  }
-  .info img {
+.info{
+  padding-top: 70px;
+}
+
+.horarios {
+  width: 850px;
+  box-shadow: rgba(0, 0, 0, 0.534) 0px 5px 15px;
+}
+
+.info img {
 border-radius: 35px;
-  }
-  
-  .inscricao {
-    margin: 20px 0 10px;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .categorias {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
+}
+
+.inscricao {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: bold 3%;
+  padding-top: 50px;
+}
+
+.categorias {
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
   
   .categoria {
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     gap: 10px;
+    
   }
   
   .categoria strong {
-    min-width: 90px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold 1%;
+    padding-top: 20px;
   }
   
   .categoria button {

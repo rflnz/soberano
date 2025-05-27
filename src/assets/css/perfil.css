@@ -1,8 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
+  font-family: 'Montserrat', sans-serif;
+  background: #FDB913;
+  color: #001D7E;
+  height: 100vh;
+  overflow: hidden;
+}
+
   .container {
     display: flex;
     height: 100vh;
