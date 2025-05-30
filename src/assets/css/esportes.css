@@ -26,12 +26,19 @@ body {
 display: flex;
 padding-left: 35px;
 padding-top: 36px;
-gap: 150px;
+gap: 100px;
 
 }
 
 .info{
   padding-top: 70px;
+}
+.info h2{
+  font-weight: bold 4%;
+  font-size: 30px;
+  font-style: 'Montserrat', sans-serif;
+  padding-bottom: 5px;
+  padding-top: 0%;
 }
 
 .horarios {
@@ -51,86 +58,80 @@ border-radius: 35px;
 }
 
 .categorias {
-  font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
-  
-  .categoria {
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 10px;
-    
-  }
-  
-  .categoria strong {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: bold 1%;
-    padding-top: 20px;
-  }
-  
-  .categoria button {
-    background-color: #001f8b;
-    color: white;
-    padding: 6px 14px;
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    font-size: 14px;
-    transition: background 0.2s;
-  }
-  
-  .categoria button:hover {
-    background-color: #0032cc;
-  }
 
+.categoria {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
 
-  
-  .carousel {
-    position: relative;
-    width: 750px;
-    height: 750px;
-    box-shadow: rgba(0, 0, 0, 0.534) 0px 5px 15px;
-    overflow: hidden;
-    border-radius: 12px;
-  
-  }
-  
-  .carousel-images {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    height: 100%;
-  }
-  
-  .carousel-images img {
-    width: 100%;
-    object-fit: cover;
-    border-radius: 12px;
-    height: 100%;
-    flex-shrink: 0;
-  }
-  
-  .carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white;
-    font-size: 2rem;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1;
-  }
-  
-  .prev {
-    left: 10px;
-  }
-  
-  .next {
-    right: 10px;
-  }
+.categoria strong {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold 1%;
+  padding-top: 20px;
+}
+
+.categoria button {
+  background-color: #001f8b;
+  color: white;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.categoria button:hover {
+  background-color: #0032cc;
+}
+
+.carousel {
+  position: relative;
+  width: 850px;
+  height: 870px;
+  box-shadow: rgba(0, 0, 0, 0.534) 0px 5px 15px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.carousel-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  height: 100%;
+}
+
+.carousel-images img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
