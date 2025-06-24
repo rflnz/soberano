@@ -5,11 +5,20 @@
 }
 
 body {
+  margin: 0;
+  min-height: 100vh;
   font-family: 'Montserrat', sans-serif;
-  background: #FDB913;
+  background: linear-gradient(135deg, #fdca00, #f08000);
+  background-size: 300% 300%;
+  animation: gradientFlow 6s ease infinite;
   color: #001D7E;
-  height: 100vh;
   overflow: hidden;
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 .avatar{
   border-radius: 100%;
