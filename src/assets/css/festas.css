@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fdc200, #f08000);
+    background-size: 300% 300%;
+    animation: gradientFlow 6s ease infinite;
+    color: #001D7E;
+  }
+  
+  @keyframes gradientFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .header {
+    text-align: center;
+    padding: 4rem 2rem 2rem;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+    color: #0e2ea2;
+  }
+  
+  .header p {
+    font-size: 1.2rem;
+    color: #fff;
+    opacity: 0.9;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .festa-card {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .festa-card:hover {
+    transform: scale(1.03);
+  }
+  
+  .festa-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    padding: 1.5rem;
+    color: #222;
+  }
+  
+  .card-content h2 {
+    color: #be185d;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-content p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+  }
+  
+  .card-content button {
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #FDB813;
+    border: none;
+    color: #000;
+    font-weight: bold;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card-content button:hover {
+    background-color: #ffae00;
+  }
+  
+  /* Modal */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+  }
+  
+  .modal-content {
+    background: #fff;
+    color: #222;
+    margin: 8% auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    animation: slideDown 0.4s ease;
+  }
+  
+  @keyframes slideDown {
+    from { opacity: 0; transform: translateY(-50px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 1.5rem;
+    color: #aaa;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: #000;
+  }
+  
+  .modal-content label {
+    font-weight: bold;
+    margin-top: 1rem;
+    display: block;
+  }
+  
+  .modal-content input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+  }
+  
+  .modal-content button {
+    margin-top: 1.5rem;
+    background-color: #FDB813;
+    border: none;
+    padding: 0.7rem;
+    font-weight: bold;
+    color: #000;
+    border-radius: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .modal-content button:hover {
+    background-color: #ffae00;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #eee;
+    padding: 3rem 2rem 1rem;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.2rem;
+    color: #FFD700;
+    margin-bottom: 0.8rem;
+  }
+  
+  .footer-section p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  
+  .social-icons img {
+    width: 28px;
+    height: 28px;
+    filter: invert(90%);
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.15);
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #333;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    font-size: 0.85rem;
+    color: #aaa;
+  }
+  .pagamento-opcoes {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+  }
+  
+  .pagamento-opcoes label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  

@@ -12,7 +12,7 @@ body {
   background-size: 300% 300%;
   animation: gradientFlow 6s ease infinite;
   color: #001D7E;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 @keyframes gradientFlow {
@@ -73,5 +73,58 @@ body {
   .produto strong {
     font-size: 17px;
     font-family: 'Poppins', sans-serif;
+  }
+  .footer {
+    margin-top: 25px;
+    color: #eee;
+    padding: 3rem 2rem 1rem;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 0.8;
+  background-color: rgba(0, 0, 0, 0.3);
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.8rem;
+    color: #FFD700;
+  }
+  
+  .footer-section p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  
+  .social-icons img {
+    width: 28px;
+    height: 28px;
+    filter: invert(90%);
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icons img:hover {
+    transform: scale(1.15);
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #333;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    font-size: 0.85rem;
+    color: #aaa;
   }
   
