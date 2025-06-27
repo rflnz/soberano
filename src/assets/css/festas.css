@@ -18,6 +18,12 @@
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
   }
+  .voltar {
+    color: #001f8b;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold 3%;
+  }
   
   .header {
     text-align: center;
