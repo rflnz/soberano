@@ -123,6 +123,32 @@
     
   </div>
 
+<!-- Modal de Compra -->
+<div id="modalCompra" class="modal hidden">
+  <div class="modal-content">
+    <span class="close-button" onclick="fecharModal()">&times;</span>
+    <img id="modalImagem" src="" alt="Produto" />
+    <p id="modalTitulo"><strong>Produto</strong></p>
+
+    <label for="tamanho">Tamanho:</label>
+    <select id="tamanho">
+      <option>P</option>
+      <option>M</option>
+      <option>G</option>
+      <option>GG</option>
+    </select>
+
+    <h4>Pagamento</h4>
+    <div class="pagamento">
+      <label><input type="radio" name="pagamento" value="cartao" checked /> Cartão</label>
+      <label><input type="radio" name="pagamento" value="pix" /> Pix</label>
+    </div>
+
+    <button class="btn-comprar">Finalizar Compra</button>
+  </div>
+</div>
+
+
   <!-- JS Carrossel -->
   <script>
     const carousel = document.getElementById("carouselImages");
@@ -151,5 +177,28 @@
       sidebar.classList.toggle('expanded');
     }
   </script>
+  <script>
+    // Abrir modal com dados do produto clicado
+    const produtos = document.querySelectorAll('.produto');
+    const modal = document.getElementById('modalCompra');
+    const modalImagem = document.getElementById('modalImagem');
+    const modalTitulo = document.getElementById('modalTitulo');
+  
+    produtos.forEach(produto => {
+      produto.addEventListener('click', () => {
+        const imagem = produto.querySelector('img').src;
+        const titulo = produto.querySelector('p').innerHTML;
+  
+        modalImagem.src = imagem;
+        modalTitulo.innerHTML = titulo;
+        modal.classList.remove('hidden');
+      });
+    });
+  
+    function fecharModal() {
+      modal.classList.add('hidden');
+    }
+  </script>
+  
 </body>
 </html>

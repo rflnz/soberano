@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Festas | Atlética</title>
+  <link rel="stylesheet" href="../../assets/css/festas.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <a href="../../pages/public/eventos.html" class="voltar">← Eventos</a>
+  </header>
+
+  <header class="header">
+    <h1>Eventos acadêmicos</h1>
+    <p>Veja os próximos eventos e inscreva-se!</p>
+  </header>
+
+  <main class="grid-container">
+    <!-- Card 1 -->
+    <div class="festa-card">
+      <img src="../../assets/img/Captura de tela 2025-07-03 165416.png" alt="Furacão" />
+      <div class="card-content">
+        <h2>Feira das profições</h2>
+        <p><strong>Data:</strong> 20 de Julho às 13h</p>
+        <p><strong>Local:</strong> Salão Atlética Soberano</p>
+        <p>Apresente seu curso para um aluno do ensino médio!</p>
+        <button onclick="abrirModal()">Comprar Ingresso</button>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="festa-card">
+      <img src="../../assets/img/Captura de tela 2025-07-03 165249.png" alt="GonzagaFest" />
+      <div class="card-content">
+        <h2>Júri simulado</h2>
+        <p><strong>Data:</strong> 12 de Agosto às 11h</p>
+        <p><strong>Local:</strong> Ginásio Central da Faculdade</p>
+        <p>Participe de um Júri simulado.</p>
+        <button onclick="abrirModal()">Comprar Ingresso</button>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="festa-card">
+      <img src="../../assets/img/Captura de tela 2025-07-03 165114.png" alt="Open Soberano" />
+      <div class="card-content">
+        <h2>Palestra</h2>
+        <p><strong>Data:</strong> 5 de Setembro às 23h</p>
+        <p><strong>Local:</strong> Praça do Centro Acadêmico</p>
+        <p>Uma noite inteira de open bar e integração entre cursos!</p>
+        <button onclick="abrirModal()">Comprar Ingresso</button>
+      </div>
+    </div>
+  </main>
+
+  <!-- Modal de Compra -->
+  <div id="modalCompra" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModal()">&times;</span>
+      <h2>Compra de Ingresso</h2>
+      
+      <form id="formCompra">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required>
+      
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" required>
+      
+        <label for="quantidade">Quantidade:</label>
+        <input type="number" id="quantidade" min="1" max="10" required>
+      
+        <label>Forma de Pagamento:</label>
+        <div class="pagamento-opcoes">
+          <label><input type="radio" name="pagamento" value="pix" required> Pix</label>
+          <label><input type="radio" name="pagamento" value="cartao"> Cartão de Crédito</label>
+        </div>
+      
+        <button type="submit">Confirmar Compra</button>
+      </form>
+      <p id="mensagemCompra" style="display:none; margin-top: 1rem;"></p>
+      
+      <p id="mensagemCompra" style="display:none; margin-top: 1rem;"></p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>📍 Localização</h3>
+        <p>Universidade Exemplo<br>Rua das Atléticas, 123<br>Cidade Universitária - SP</p>
+      </div>
+      <div class="footer-section">
+        <h3>📱 Redes Sociais</h3>
+        <div class="social-icons">
+          <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
+          <a href="#"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp"></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h3>⚙️ Créditos</h3>
+        <p>Desenvolvido por Rafaela Nunes Acosta<br>Versão 1.0 | 2025</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Atlética Soberano. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    function abrirModal() {
+      document.getElementById("modalCompra").style.display = "block";
+    }
+
+    function fecharModal() {
+      document.getElementById("modalCompra").style.display = "none";
+    }
+
+    document.getElementById("formCompra").addEventListener("submit", function (e) {
+      e.preventDefault();
+      document.getElementById("mensagemCompra").innerText = "✅ Compra confirmada! Obrigado.";
+      document.getElementById("mensagemCompra").style.display = "block";
+      setTimeout(() => fecharModal(), 2000);
+    });
+  </script>
+</body>
+</html>
