@@ -56,6 +56,7 @@ body {
     width: 350px;
     height: 320px;
     box-shadow: rgba(0, 0, 0, 0.534) 0px 5px 15px;
+    transition: transform 0.3s ease;
   }
   
   .produto img {
@@ -127,4 +128,6 @@ body {
     font-size: 0.85rem;
     color: #aaa;
   }
-  
+  .produto:hover {
+    transform: scale(1.03);
+  }

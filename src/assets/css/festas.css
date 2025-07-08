@@ -24,6 +24,9 @@
     font-size: 30px;
     font-family: 'Montserrat', sans-serif;
   }
+  .container {
+    padding: 30px 35px;
+  }
   .header {
     text-align: center;
     padding: 4rem 2rem 2rem;

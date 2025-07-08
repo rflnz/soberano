@@ -96,10 +96,12 @@ border-radius: 35px;
   font-size: 14px;
   transition: background 0.2s;
   font-size: 20px;
+  transition: transform 0.3s ease;
 }
 
 .categoria button:hover {
   background-color: #0032cc;
+  transform: scale(1.03);
 }
 
 .carousel {
