@@ -8,7 +8,7 @@
 body {
   margin: 0;
   min-height: 100vh;
-  background: linear-gradient(135deg, #fdca00, #f08000);
+  background: linear-gradient(135deg, #fdc200, #f08000);
   background-size: 300% 300%;
   animation: gradientFlow 6s ease infinite;
   color: #001D7E;
@@ -66,7 +66,6 @@ a:hover {
 
 
 .sidebar {
-  background-color: #001c75;
   width: 80px;
   display: flex;
   flex-direction: column;
@@ -114,7 +113,7 @@ a:hover {
 
 
 .sidebar {
-  background-color:#001c75;
+  background-color:#ffffff26;
   width: 85px;
   transition: width 0.3s ease;
   overflow: hidden;
@@ -230,7 +229,7 @@ a:hover {
   position: relative;
   width: 500px;
   height: 890px;
-  box-shadow: rgba(0, 0, 0, 0.534) 0px 5px 15px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.322);
   overflow: hidden;
   border-radius: 12px;
 
@@ -274,7 +273,7 @@ a:hover {
 /* Produtos */
 
 .produtos a {
-  color: #001c75;
+  color: #001D7E;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   font-size: 27px;
@@ -289,14 +288,14 @@ a:hover {
 }
 
 .produto {
-  background: #001D7E;
-  color: white;
-  border-radius: 12px;
-  padding: 8px;
+  background: #ffffff6b;
+  color: rgb(2, 2, 91);
+  border-radius: 1rem;
   font-size: 17px;
   width: 300px;
   height: 320px;
-  box-shadow: rgba(0, 0, 0, 0.534) 0px 5px 15px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
   transition: transform 0.3s ease;
 }
 .produto p {
@@ -306,14 +305,14 @@ a:hover {
 .produto img {
   width: 100%;
   height: 240px;
-  border-radius: 10px;
+
   object-fit: cover;
 }
 
 /* Bastidores */
 
 .bastidores a {
-  color: #001c75;
+  color:#001D7E;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   font-size: 27px;
@@ -334,25 +333,27 @@ a:hover {
 }
 
 .bastidor {
-  background: #001D7E;
-  color: white;
+  background: #ffffff6b;
+  color: rgb(2, 2, 91);
   border-radius: 12px;
   overflow: hidden;
   font-size: 14px;
   height: 470px;
   width: 626px;
-  padding: 8px;
-  border-radius: 12px;
+  border-radius: 1rem;
   font-size: 17px;
-  box-shadow: rgba(0, 0, 0, 0.534) 0px 5px 15px;
-
+  box-shadow: 0 0 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+.bastidor:hover {
+  transform: scale(1.02);
 }
 
 .bastidor img {
   width: 100%;
   height: 406px;
   object-fit: cover;
-  border-radius: 10px;
+
 }
 
 .bastidor p {
